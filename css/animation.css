@@ -1,19 +1,76 @@
+@keyframes animate{
+	0%{ background-color: red;
+}
+
+	20%{ background-color: purple;
+}
+	40%{
+		background-color: blue;
+}
+	60%{
+		background-color: orange;
+	}
+	80%{
+		background-color: tomato;
+	}
+	100%{
+		background-color: red;
+	}
+}
+
+@keyframes rotating{
+	0%{
+		transform: rotate(0deg);
+	}
+	15%{
+		transform: rotate(45deg);
+	}
+	30%{
+		transform: rotate(90deg);
+	}
+	45%{
+		transform: rotate(135deg);
+	}
+	60%{
+		transform: rotate(180deg);
+	}
+	75%{
+		transform: rotate(225deg);
+	}
+	90%{
+		transform: rotate(270deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+
+}
+
 #rotate{
   transform: rotate(45deg);
+  background-color: orange;
 }
 
 #skew{
   transform: skew(20deg);
+   background-color: orange;
 }
 
 #all{
   transform: rotate(30deg) skew(25deg); 
+   background-color: orange;
 }
 
 #matrix{
   transform: matrix(1, -0.3, 0, 1, 0, 0);
+  background-color: orange;
 }
 
-@keyframes animate{
-  
+#animate{
+	animation: animate 3s infinite, rotating 0.5s infinite;
+
 }
+
+
+
+
