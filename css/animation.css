@@ -1,18 +1,19 @@
 @keyframes animate{
-	0%{ background-color: red;
-}
-
-	20%{ background-color: purple;
-}
+	0%{
+   background-color: red; 
+  }
+	20%{ 
+    background-color: purple; 
+  }
 	40%{
-		background-color: blue;
-}
+		background-color: blue; 
+  }
 	60%{
-		background-color: orange;
-	}
+		background-color: orange; 
+  }
 	80%{
 		background-color: tomato;
-	}
+  }
 	100%{
 		background-color: red;
 	}
@@ -20,30 +21,41 @@
 
 @keyframes rotating{
 	0%{
-		transform: rotate(0deg);
+		transform: rotate(0deg) scale(1,1);
 	}
 	15%{
-		transform: rotate(45deg);
+		transform: rotate(45deg) scale(0.85,0.85); 
 	}
 	30%{
-		transform: rotate(90deg);
+		transform: rotate(90deg) scale(0.7,0.7);
 	}
 	45%{
-		transform: rotate(135deg);
+		transform: rotate(135deg) scale(0.55,0.55);
 	}
 	60%{
-		transform: rotate(180deg);
+		transform: rotate(180deg) scale(0.4,0.4);
 	}
 	75%{
-		transform: rotate(225deg);
+		transform: rotate(225deg) scale(0.25,0.25);
 	}
 	90%{
-		transform: rotate(270deg);
+		transform: rotate(270deg) scale(0.1,0.1);
 	}
 	100%{
-		transform: rotate(360deg);
+		transform: rotate(360deg) scale(1,1)
 	}
+}
 
+@keyframes sliding{
+  0%{
+    margin-left: 0%;
+  }
+  75%{
+    margin-left: 75%;
+  }
+  0%{
+    margin-left: 0%;
+  }
 }
 
 #rotate{
@@ -67,8 +79,9 @@
 }
 
 #animate{
-	animation: animate 3s infinite, rotating 0.5s infinite;
-
+	animation:animate 3s infinite, 
+  rotating 0.3s infinite, 
+  sliding 10s infinite;
 }
 
 
