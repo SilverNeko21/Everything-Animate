@@ -1,12 +1,12 @@
 @keyframes animate{
 	0%{
-   		background-color: red; 
+   		background-color: maroon; 
   }
 	20%{ 
-    	background-color: purple; 
+    	background-color: violet; 
   }
 	40%{
-		background-color: blue; 
+		background-color: teal; 
   }
 	60%{
 		background-color: orange; 
@@ -15,7 +15,7 @@
 		background-color: tomato;
   }
 	100%{
-		background-color: red;
+		background-color: maroon;
 	}
 }
 
@@ -60,28 +60,32 @@
 
 #rotate{
   transform: rotate(45deg);
-  background-color: orange;
+  background-color: teal;
+  animation: sliding 3s infinite;
 }
 
 #skew{
   transform: skew(20deg);
-   background-color: orange;
+   background-color: tomato;
+   animation: sliding 5s infinite;
 }
 
 #all{
   transform: rotate(30deg) skew(25deg); 
-   background-color: orange;
+   background-color: maroon;
+   animation: sliding 7s infinite;
 }
 
 #matrix{
   transform: matrix(1, -0.3, 0, 1, 0, 0);
-  background-color: orange;
+  background-color: gold;
+  animation:sliding 15s infinite;
 }
 
 #animate{
 	animation:animate 3s infinite, 
-  			  rotating 0.3s infinite, 
- 			  sliding 10s infinite;
+  			  rotating 0.5s infinite, 
+ 			  sliding 100s infinite;
 }
 
 
