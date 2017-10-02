@@ -1,9 +1,9 @@
 @keyframes animate{
 	0%{
-   background-color: red; 
+   		background-color: red; 
   }
 	20%{ 
-    background-color: purple; 
+    	background-color: purple; 
   }
 	40%{
 		background-color: blue; 
@@ -80,8 +80,8 @@
 
 #animate{
 	animation:animate 3s infinite, 
-  rotating 0.3s infinite, 
-  sliding 10s infinite;
+  			  rotating 0.3s infinite, 
+ 			  sliding 10s infinite;
 }
 
 
