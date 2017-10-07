@@ -62,30 +62,35 @@
   transform: rotate(45deg);
   background-color: teal;
   animation: sliding 3s infinite;
+  transition: 2s;
 }
 
 #skew{
   transform: skew(20deg);
    background-color: tomato;
    animation: sliding 5s infinite;
+   transition: 2s;
 }
 
 #all{
   transform: rotate(30deg) skew(25deg); 
    background-color: maroon;
    animation: sliding 7s infinite;
+   transition: 2s;
 }
 
 #matrix{
   transform: matrix(1, -0.3, 0, 1, 0, 0);
   background-color: gold;
   animation:sliding 15s infinite;
+  transition: 2s;
 }
 
 #animate{
 	animation:animate 3s infinite, 
   			  rotating 0.5s infinite, 
  			  sliding 100s infinite;
+ 			  transition: 10s;
 }
 
 
